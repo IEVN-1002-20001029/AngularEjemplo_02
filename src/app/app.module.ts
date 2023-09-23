@@ -4,13 +4,20 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { ProductListComponent } from './product/product-list/product-list.component';
 
+import { FormsModule } from '@angular/forms';
+import { ProductoFilterPipe } from './product/producto-filter.pipe';
+import { OperasBasComponent } from './formularios/operas-bas/operas-bas.component';
+
 @NgModule({
   declarations: [
     AppComponent,
-    ProductListComponent
+    ProductListComponent,
+    ProductoFilterPipe,
+    OperasBasComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
