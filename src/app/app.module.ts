@@ -10,12 +10,10 @@ import { OperasBasComponent } from './formularios/operas-bas/operas-bas.componen
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Suma2Component } from './formularios/suma2/suma2.component';
 
-import {MatInputModule} from '@angular/material/input';
-import {MatButtonModule} from '@angular/material/button';
-import { MenuComponent } from './menu/menu/menu.component';
 
-import{MatToolbarModule}from '@angular/material/toolbar';
-import{MatIconModule} from '@angular/material/icon';
+import { MenuComponent } from './menu/menu/menu.component';
+import { MaterialModule } from './material/material/material.module';
+
 
 
 
@@ -33,10 +31,8 @@ import{MatIconModule} from '@angular/material/icon';
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
-    MatInputModule,
-    MatButtonModule,
-    MatToolbarModule,
-    MatIconModule
+    MaterialModule
+   
   ],
   providers: [],
   bootstrap: [AppComponent]
